@@ -142,7 +142,9 @@ void StartDefaultTask(void const * argument)
   /* Infinite loop */
   for(;;)
   {
-    osDelay(1);
+    LED0_TOG;
+    LED1_TOG; 
+    osDelay(200);
   }
   /* USER CODE END StartDefaultTask */
 }

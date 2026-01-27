@@ -71,6 +71,15 @@ void Error_Handler(void);
 #define ETH_TXD1_GPIO_PIN_GPIO_Port GPIOG
 
 /* USER CODE BEGIN Private defines */
+#define LED0_TOG	( HAL_GPIO_TogglePin(LED0_GPIO_Port, LED0_Pin) )
+#define LED1_TOG	( HAL_GPIO_TogglePin(LED1_GPIO_Port, LED1_Pin) )
+
+#define LED0_ON		( HAL_GPIO_WritePin(LED0_GPIO_Port, LED0_Pin, GPIO_PIN_RESET) )
+#define LED1_ON		( HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_RESET) )
+
+
+#define	ETH_RESET	( HAL_GPIO_WritePin(ETH_RESET_GPIO_PIN_GPIO_Port, ETH_RESET_GPIO_PIN_Pin, GPIO_PIN_RESET) )
+#define	ETH_SET		( HAL_GPIO_WritePin(ETH_RESET_GPIO_PIN_GPIO_Port, ETH_RESET_GPIO_PIN_Pin, GPIO_PIN_SET) )
 
 /* USER CODE END Private defines */
 
