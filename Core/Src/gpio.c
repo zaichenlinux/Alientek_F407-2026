@@ -38,9 +38,6 @@
         * Output
         * EVENT_OUT
         * EXTI
-     PG11   ------> ETH_TX_EN
-     PG13   ------> ETH_TXD0
-     PG14   ------> ETH_TXD1
 */
 void MX_GPIO_Init(void)
 {
@@ -75,14 +72,6 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_MEDIUM;
   HAL_GPIO_Init(ETH_RESET_GPIO_PIN_GPIO_Port, &GPIO_InitStruct);
-
-  /*Configure GPIO pins : PGPin PGPin PGPin */
-  GPIO_InitStruct.Pin = ETH_TX_EN_GPIO_PIN_Pin|ETH_TXD0_GPIO_PIN_Pin|ETH_TXD1_GPIO_PIN_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
-  GPIO_InitStruct.Alternate = GPIO_AF11_ETH;
-  HAL_GPIO_Init(GPIOG, &GPIO_InitStruct);
 
 }
 
