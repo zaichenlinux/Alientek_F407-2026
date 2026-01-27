@@ -1,0 +1,5 @@
+MDK-ARM/Alientek_F407/*
+
+Drivers/CMSIS/Core/Template/ARMv8-M/*
+Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/*
+Drivers/CMSIS/DSP/*
