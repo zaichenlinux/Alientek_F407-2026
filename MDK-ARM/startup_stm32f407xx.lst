@@ -849,12 +849,12 @@ interwork --depend=alientek_f407\startup_stm32f407xx.d -oalientek_f407\startup_
 ARM Macro Assembler    Page 14 
 
 
-stm32f407xx.o -I../Drivers/CMSIS/Include -I.\RTE\_Alientek_F407 -IC:\Users\1196
-0\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include -IC:\Users\11960\A
-ppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F
-4xx\Include --predefine="__UVISION_VERSION SETA 534" --predefine="_RTE_ SETA 1"
- --predefine="STM32F407xx SETA 1" --predefine="_RTE_ SETA 1" --list=startup_stm
-32f407xx.lst startup_stm32f407xx.s
+stm32f407xx.o -I../Drivers/CMSIS/Include -I.\RTE\_Alientek_F407 -IC:\Users\chen
+zai\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include -IC:\Users\chenz
+ai\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\ST
+M32F4xx\Include --predefine="__UVISION_VERSION SETA 534" --predefine="_RTE_ SET
+A 1" --predefine="STM32F407xx SETA 1" --predefine="_RTE_ SETA 1" --list=startup
+_stm32f407xx.lst startup_stm32f407xx.s
 
 
 
